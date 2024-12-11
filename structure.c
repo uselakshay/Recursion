@@ -44,12 +44,13 @@ int main(){
         printf(" Branch :");
         scanf("%s",DITStudents1[i].branch);
         printf(" Sap ID :");
-        scanf("%ls",DITStudents1[i].sap_id);
+        scanf("%ld",&DITStudents1[i].sap_id);
     }
 
-
+    printf("Printing Student Details\n");
+    printf("Number of Students : %d",n);
     for (int i=0;i<n;i++){
-        printf("Students Details %d \n Name : %s \n Branch : %s \n Roll num : %s \n Sap id : %ls",i+1,DITStudents1[i].name,DITStudents1[i].branch,DITStudents1[i].roll_no,DITStudents1[i].sap_id);
+        printf("Students Details %d \n Name : %s \n Branch : %s \n Roll num : %s \n Sap id : %ld",i+1,DITStudents1[i].name,DITStudents1[i].branch,DITStudents1[i].roll_no,DITStudents1[i].sap_id);
         printf("\n \n");
     }
     return 0;

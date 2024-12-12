@@ -16,3 +16,9 @@ void swap(int *p, int *q){
     *p=*q;
     *q=temp;
 }
+
+
+// pointer function using code written in another function 
+// using variable to build a loop which goes infinite 
+// write structure again 
+// multiplcation series from any variables 

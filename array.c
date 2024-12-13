@@ -9,6 +9,7 @@ void main()
 
     // arr_1d();
     // arr_2d();
+    arr_3d();
 }
 
 void arr_1d()
@@ -34,6 +35,27 @@ void arr_2d()
         printf("\n");
     }
 }
-void arr_3d(){
-    int arr
+void arr_3d()
+{
+    //keep focus on initialisation;
+    int arr[2][2][2] = {{{2, 2},
+                         {2, 2}},
+                        {{4, 4},
+                         {4, 5}}};
+    int layer = 2; // use layer concpet
+    int outer_size = 2;
+    int inner_size = 2;
+    for (int l = 0; l < layer; l++)
+    {
+        for (int i = 0; i < outer_size; i++)
+        {
+            printf("\nLayer %d",l);
+            printf("\nPrinting Outer array %d:", i);
+            for (int j = 0; j < inner_size; j++)
+            {
+                printf("\n%d", arr[l][i][j]);
+            }
+            printf("\n");
+        }
+    }
 }
